@@ -157,7 +157,7 @@ var pusher = new Pusher({
 const csp = require('helmet-csp');
 app.use(csp({
     directives: {
-        defaultSrc:[`'self'`,`http://localhost:3000/`],
+        defaultSrc:[`'self'`,`/`],
         imgSrc: [`'data:'`, `'favicon.ico'`],
     }
 }));

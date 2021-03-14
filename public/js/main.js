@@ -31,7 +31,7 @@ form.addEventListener('submit', e => {
     //     .then(data => console.log(data)) 
     //     .catch(err => console.log(err));
 
-    fetch('http://localhost:3000/poll', {
+    fetch('/poll', {
         method: 'post', //after collecting vote response,send a pcandidatet request to update our database
         body: JSON.stringify(data), 
         

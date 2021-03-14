@@ -11,7 +11,7 @@ form.addEventListener('submit', e => {
     const data = { email:email ,name: username, password: password, gender:gender};//recreating the object format
     console.log("datainitial",data)
  
-    fetch('http://localhost:3000/user/users', {
+    fetch('/user/users', {
         method: 'post', //after collecting vote response,send a post request to update our database
         body: JSON.stringify(data), 
         headers: new Headers({

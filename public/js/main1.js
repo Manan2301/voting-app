@@ -8,7 +8,7 @@ form.addEventListener('submit', e => {
     // console.log("datainitial",data)
     console.log(JSON.parse(JSON.stringify(data)))
 
-    fetch('http://localhost:3000/', {
+    fetch('/', {
         method: 'post', //after collecting vote response,send a pcandidatet request to update our database
         body: JSON.stringify(data), 
         
@@ -25,7 +25,7 @@ form.addEventListener('submit', e => {
 
 
 
-fetch('http://localhost:3000/poll',{
+fetch('/poll',{
     headers: {'Content-Type':undefined}
     
 })

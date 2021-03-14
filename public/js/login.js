@@ -12,12 +12,12 @@ form1.addEventListener('submit', e => {
     const data = { email:email ,name: username, password: password};//recreating the object format
     console.log("datainitial",data)
     
-    fetch('http://localhost:3000/user/users/render', {
+    fetch('/user/users/render', {
             method: 'get',
             credentials:'same-origin',
             headers: new Headers({
                 'Content-Type': 'application/json',
-                'Origin':'http://localhost:3000/',
+                'Origin':'/',
                 
             })
     }).then (res => res.json())
