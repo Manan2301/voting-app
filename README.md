@@ -1,5 +1,7 @@
 # voting-app
 admin CREDENTIALS (hardcoded): name:admin, email:admin@evote.com , password:adminroot101
+
+
 Features:
 1.login/signup
 2.Vote
