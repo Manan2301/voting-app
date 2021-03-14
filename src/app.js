@@ -14,6 +14,7 @@ const app = express()
 const sharp = require('sharp')
 //const user = require('./routers/user')
 const port = process.env.PORT || 3000
+const host = '0.0.0.0';
 const pathTopublic = path.join(__dirname, '../public')
 const viewspath = path.join(__dirname, '../templates/views')// if we want to use non default templates instead of default views
 const partialsPath = path.join(__dirname, '../templates/partials')
@@ -161,7 +162,7 @@ app.use(csp({
         imgSrc: [`'data:'`, `'favicon.ico'`],
     }
 }));
-app.listen(port,()=>{
+app.listen(port,host,()=>{
   console.log("Server is up on port " + port)
 })
 //app.use(userRouter)
