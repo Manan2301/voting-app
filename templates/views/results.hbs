@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello, World</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Election</h1>
+        <p>VOTE WISELY</p>
+        <div id="hasVotedAlreadyErrorMsg" class="card-panel hidden" style="width: 30%">
+          <span class="red-text text-darken-2">You have already voted, you can only vote once.</span>
+        </div>
+        <form id="vote-form">
+          <p>
+            <label>
+                <input type="radio" name="candidate" id="candidate1" value="Candidate1">
+                <span for="candidate1">Candidate1</span>
+            </label>
+          <p>
+            <label>
+                <input type="radio" name="candidate" id="candidate2" value="Candidate2">
+                <span for="candidate2">Candidate2</span>
+            </label>
+          <p>
+            <label>
+                <input type="radio" name="candidate" id="candidate3" value="Candidate3">
+                <span for="candidate3">Candidate3</span>
+            </label>
+          </p>
+          <p>
+            <label>
+                <input type="radio" name="candidate" id="candidate4" value="Candidate4">
+                <span for="candidate4">Candidate4</span>
+            </label>
+          </p>
+          <input type="submit" value="Vote" class="btn">
+        </form>
+    
+        <br>
+        <br>
+        
+        <h5 style="text-align: center" id="chartTitle"></h5>
+        <div id="chartContainer" style="height: 400px;width:95%"></div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.3/pusher.min.js" integrity="sha512-XVnzJolpkbYuMeISFQk6sQIkn3iYUbMX3f0STFUvT6f4+MZR6RJvlM5JFA2ritAN3hn+C0Bkckx2/+lCoJl3yg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+  </body>
+  <script src="/js/main1.js"></script>
+</html>
