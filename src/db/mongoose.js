@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.CONNECTION_URL,{
+mongoose.connect(process.env.MONGODB_URI,{
     useNewUrlParser: true,
     useCreateIndex: true, // makes sure indexes are created when mongoose works with mongodb
     useFindAndModify: false
